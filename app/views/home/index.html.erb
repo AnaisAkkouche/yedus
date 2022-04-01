@@ -4,12 +4,16 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Questrial&display=swap" rel="stylesheet">
 </head>
+<header>
+<a class="logo" href="/home">
+<%= image_tag 'logo_yedus_1.png'%>
+</a></header>
 
 <h1>Comment te sens-tu?</h1>
 
 <% @songs.each do |song| %>
  <div class="btn btn-outline-primary">
- <a href=<%= song.link %> target=_blank>
+ <a class="link" href=<%= song.link %> target=_blank>
     <%= song.emotion %>
   </a>
   </div>

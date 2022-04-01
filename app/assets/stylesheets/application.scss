@@ -15,9 +15,39 @@
  */
 
  // Custom bootstrap variables must be set or imported *before* bootstrap.
- @import "bootstrap";
+ $primary:#8979A3;
+@import "bootstrap";
+header{
+  margin-bottom: 50px;
+}
+
+ h1{
+  font-family: 'Questrial', sans-serif;
+  color: #031827;
+  text-align: center;
+  margin-top: 5px
+}
+
+body{
+  font-family:'Montserrat', sans-serif; ;
+  font-size: medium;
+  background-color:#f8f4ea;
+  text-align: center;
+  color: #8979A3;
+}
 
  a {
      font-size: large;
      text-align:center;
+
  }
+
+.btn{
+  color: #8979A3 !important;
+  margin-top: 100px;
+  margin-right: 20px;
+}
+
+.btn-outline-primary{
+  border: 2px solid #8979A3 !important;
+}
