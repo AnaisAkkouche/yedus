@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
   def index
-    @emotions = Song.all
+    @songs = Song.all
   end
 end

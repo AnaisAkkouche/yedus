@@ -1,5 +1,17 @@
+<head>
+<link rel="stylesheet" href="../../assets/stylesheets/application.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Questrial&display=swap" rel="stylesheet">
+</head>
+
 <h1>Comment te sens-tu?</h1>
 
-<% @emotions.each do |song| %>
-  <%= song.emotion %>
+<% @songs.each do |song| %>
+ <div class="btn btn-outline-primary">
+ <a href=<%= song.link %> target=_blank>
+    <%= song.emotion %>
+  </a>
+  </div>
+
 <% end %>
