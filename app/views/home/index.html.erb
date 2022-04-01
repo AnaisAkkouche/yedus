@@ -6,16 +6,13 @@
 </head>
 <header>
 <a class="logo" href="/home">
-<%= image_tag 'logo_yedus_1.png'%>
+<%= image_tag 'logo_yedus_bon_1.png'%>
 </a></header>
 
-<h1>Comment te sens-tu?</h1>
+<h1 class="mb-5">Comment te sens-tu?</h1>
 
 <% @songs.each do |song| %>
- <div class="btn btn-outline-primary">
- <a class="link" href=<%= song.link %> target=_blank>
+  <a class="btn btn-lg btn-outline-primary me-4" href="<%= song.link %>" target="_blank">
     <%= song.emotion %>
   </a>
-  </div>
-
 <% end %>
